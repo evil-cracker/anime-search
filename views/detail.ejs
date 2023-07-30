@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Details</title>
+    </head>
+
+    <body>
+        <label for="name">Anime name :</label>
+        <%= name %>
+
+
+            <% data.forEach((dat)=>{%>
+      <div>
+
+ <p>Name of show : <%= dat.attributes.canonicalTitle %></p>
+
+
+
+<p> Genres : 
+
+    <% gener.forEach((gen)=>{ %> <%= gen.attributes.name %>,
+   
+
+<% }) %>
+ </p>
+
+
+ 
+
+
+ <p>Rating: <%= dat.attributes.averageRating %></p>
+
+ <p>status : <%= dat.attributes.status %></p>
+ <p> Description : <%= dat.attributes.description %></p>
+ <p>Started : <%= dat.attributes.startDate %></p>
+ <p>Ended : <%= dat.attributes.endDate %></p>
+ <p>Age rating : <%= dat.attributes.ageRating %> , <%= dat.attributes.ageRatingGuide %></p>
+ <p>Type : <%= dat.attributes.subtype %></p>
+ <p>Total Episodes : <%= dat.attributes.episodeCount %></p>
+ <p> Episodes Length: <%= dat.attributes.episodeLength %> minutes</p>
+
+
+  </div>
+
+
+                <%}) %>
+
+
+
+    </body>
+
+</html>
