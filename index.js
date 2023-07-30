@@ -35,12 +35,13 @@ app.post("/submit", async(req,res)=>{
 
 
    
-    
+
     res.render("detail.ejs",{
     
      name:name,
      data:details.data.data,
      gener:gener.data.data,
+     len: details.data.data.length,
     });
 });
 

@@ -1,0 +1,63 @@
+body{
+    background-color: #FFC26F;
+
+}
+.name{
+    font-family: 'Borel';
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #562B08;
+
+}
+
+
+
+  .master{
+
+display: flex;  
+flex-grow:1 ;
+flex-direction: column;
+justify-content: center;
+margin-top: 100px;
+gap: 150px;
+align-items: center;
+font-family: 'Ysabeau Infant', sans-serif;
+
+    }
+    .card{
+        background-color: #F3DEBA;
+    }
+    .right{
+        float: left;
+        width: 400px;
+    }
+
+    .left{
+        float: right; 
+        width: 400px;
+        height: 300px;
+    }
+
+
+    .pic{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        float: left;
+      
+        margin: 0;
+    }
+    .picright {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        float: right;
+       
+        margin: 0;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+    }

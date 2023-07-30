@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Details</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <h1>Hello there! See Here you can search Wonderful Anime!</h1>
-    <form action="/submit" method="post">
-        <input type="text" name="ani" placeholder="Enter anime here">
-        <input type="submit" value="🔎">
-    </form>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anime Details</title>
+        <%- include("head.ejs") %>
+            <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body >
+        <div class="form">
+
+            <form action="/submit" method="post">
+                <input id="inp" type="text" name="ani" placeholder="Enter anime here">
+                <input id="sub" type="submit" value="🔎">
+            </form>
+        </div>
+
+
+    </body>
+
 </html>
