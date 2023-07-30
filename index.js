@@ -22,8 +22,11 @@ app.get("/",(req,res)=>{
 
 
 app.post("/submit", async(req,res)=>{
-    
-   var name= req.body.ani;
+
+
+
+    try {
+        var name= req.body.ani;
    name=name.toUpperCase();
 
    const details = await axios.get(myurl+name);
@@ -34,8 +37,8 @@ app.post("/submit", async(req,res)=>{
 
 
 
+   console.log(details.data.data.length);
    
-
     res.render("detail.ejs",{
     
      name:name,
@@ -43,6 +46,15 @@ app.post("/submit", async(req,res)=>{
      gener:gener.data.data,
      len: details.data.data.length,
     });
+    } catch (error) {
+console.log(error);
+        res.render("error.ejs",{
+            er:error.message,
+        })
+        
+    }
+    
+   
 });
 
 

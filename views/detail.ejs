@@ -19,14 +19,14 @@
 
         <div class="name">
             <!-- <label for="name">Anime name :</label> -->
-            <%= name %>
+             <%= name %>
 
         </div>
 
 <div class="pic">
 
 
-    <% for(let i=0 ;i<len-1;i++){%>
+    <% for(let i=0 ;i<len;i++){%>
 
 
 <img class="image"  src="images/colab1.jpg"   alt="">
@@ -51,7 +51,7 @@
 
 
 
-    <% for(let i=0 ;i<len-1;i++){%>
+    <% for(let i=0 ;i<len;i++){%>
 
     <img class="image"  src="images/anime1 (9).jpg" alt="">
     <img class="image"  src="images/anime1 (10).jpg" alt="">
@@ -78,13 +78,20 @@
                 <div class="card" style="width: 600px;">
                     <div class="card-body">
                         <h1 class="card-title">
-                            <%= dat.attributes.canonicalTitle %>
+                            English name: <%= dat.attributes.titles.en %>
+                        </h1>
+                        <h1 class="card-title">
+                            Japan name: <%= dat.attributes.titles.en_jp %>
+                        </h1>
+                        <h1 class="card-title">
+                            In Japanesh: <%= dat.attributes.titles.ja_jp %>
                         </h1>
                         <h3 class="card-subtitle mb-2 text-body-secondary">
                             <% gener.forEach((gen)=>{ %> <%= gen.attributes.name %>,
 
                                     <% }) %>
                         </h3>
+                        <br><br>
                         <h4>
                             <p>Rating: <%= dat.attributes.averageRating %>
                             </p>
