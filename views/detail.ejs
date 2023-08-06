@@ -75,8 +75,9 @@
 
             <% data.forEach((dat)=>{%>
 
-                <div class="card" >
-                    <div class="card-body">
+                <div class="card" style="@media ( max-width :1000px)
+                { width: 600px};">
+                    <div class="card-body" >
                         <h1 class="card-title">
                             English name: <%= dat.attributes.titles.en %>
                         </h1>
