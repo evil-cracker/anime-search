@@ -6,14 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anime Details</title>
         <%- include("head.ejs") %>
-            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="/main.css">
     </head>
 
     <body >
+
+
+
+        
         <div class="form">
 
             <form action="/submit" method="post">
-                <input id="inp" type="text" name="ani" placeholder="Enter anime here">
+                <input id="inp" type="text" name="ani" placeholder="Enter anime here" required>
                 <input id="sub" type="submit" value="🔎">
             </form>
         </div>

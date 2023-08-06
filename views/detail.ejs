@@ -10,7 +10,7 @@
                 integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
                 crossorigin="anonymous">
                 <%- include("head.ejs") %>
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="/style.css">
 
     </head>
 
@@ -75,7 +75,7 @@
 
             <% data.forEach((dat)=>{%>
 
-                <div class="card" style="width: 600px;">
+                <div class="card" >
                     <div class="card-body">
                         <h1 class="card-title">
                             English name: <%= dat.attributes.titles.en %>
