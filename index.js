@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import axios from "axios";
 
 var app=express();
-var port=3000;
+var port= process.env.PORT || 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 var myurl="https://kitsu.io/api/edge/anime?filter[text]="
