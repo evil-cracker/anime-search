@@ -37,7 +37,7 @@ app.post("/submit", async(req,res)=>{
 
 
 
-   console.log(details.data.data.length);
+   
    
     res.render("detail.ejs",{
     
